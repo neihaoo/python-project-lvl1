@@ -6,8 +6,8 @@
 
 ## Table of Contents
 
-- [Install Games](#Install Games)
-- [Run Games](#Run Games)
+- [Install Games](#Install-Games)
+- [Run Games](#Run-Games)
   - [Brain Even](#Brain-Even)
 
 ## Install Games

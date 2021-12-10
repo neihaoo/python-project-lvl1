@@ -12,6 +12,7 @@
   - [Brain Calc](#Brain-Calc)
   - [Brain GCD](#Brain-GCD)
   - [Brain Progression](#Brain-Progression)
+  - [Brain Prime](#Brain-Prime)
 
 ## Install Games
 
@@ -62,3 +63,13 @@ $ brain-progression
 [![asciicast](https://asciinema.org/a/ZORvFqyg1GvOE0PHu3h2K5q5t.svg)](https://asciinema.org/a/ZORvFqyg1GvOE0PHu3h2K5q5t)
 
 [![asciicast](https://asciinema.org/a/ud1KqxtlY7nIF6YsOPqrS7ezp.svg)](https://asciinema.org/a/ud1KqxtlY7nIF6YsOPqrS7ezp)
+
+### Brain Prime
+
+```sh
+$ brain-prime
+```
+
+[![asciicast](https://asciinema.org/a/NbXzDJgFOr2RoE8aGRvavBYIM.svg)](https://asciinema.org/a/NbXzDJgFOr2RoE8aGRvavBYIM)
+
+[![asciicast](https://asciinema.org/a/rISolSrMZOwr2ZJpG525FtE0B.svg)](https://asciinema.org/a/rISolSrMZOwr2ZJpG525FtE0B)

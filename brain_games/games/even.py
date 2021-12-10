@@ -2,7 +2,7 @@
 
 from random import randint
 
-from brain_games.index import run_game
+from brain_games.engine import run_game as play
 
 game_description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
@@ -27,4 +27,4 @@ def start_game():
     Returns:
         fn
     """
-    return run_game(get_game_data, game_description)
+    return play(get_game_data, game_description)

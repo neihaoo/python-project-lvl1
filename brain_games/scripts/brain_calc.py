@@ -6,7 +6,7 @@ from brain_games.games.calc import start_game
 
 
 def main():
-    """Start the game."""
+    """Start Brain Calc Game."""
     start_game()
 
 

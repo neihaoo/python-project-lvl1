@@ -2,7 +2,7 @@
 
 from random import choice, randint
 
-from brain_games.index import run_game
+from brain_games.engine import run_game as play
 
 operators = ('+', '-', '*')
 game_description = 'What is the result of the expression?'
@@ -54,4 +54,4 @@ def start_game():
     Returns:
         fn
     """
-    return run_game(get_game_data, game_description)
+    return play(get_game_data, game_description)

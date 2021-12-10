@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
-"""Brain Games main script."""
+"""Brain Games Welcome Script."""
 
-from brain_games.cli import welcome_user
+from brain_games.games.cli import welcome_user
 
 
 def main():
-    """Start games."""
+    """Start the games."""
     print('Welcome to the Brain Games!')
     welcome_user()
 

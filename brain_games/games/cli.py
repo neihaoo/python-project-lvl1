@@ -1,4 +1,4 @@
-"""Brain Games CLI module."""
+"""Brain Games CLI Module."""
 
 import prompt
 

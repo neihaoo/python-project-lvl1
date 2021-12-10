@@ -9,6 +9,7 @@
 - [Install Games](#Install-Games)
 - [Run Games](#Run-Games)
   - [Brain Even](#Brain-Even)
+  - [Brain Calc](#Brain-Calc)
 
 ## Install Games
 
@@ -29,3 +30,13 @@ $ brain-even
 [![asciicast](https://asciinema.org/a/5uGhFLFaWdWnhSFe7A5uBNqaM.svg)](https://asciinema.org/a/5uGhFLFaWdWnhSFe7A5uBNqaM)
 
 [![asciicast](https://asciinema.org/a/UTLhILdA5V3Jhd5oqb4RVgtQt.svg)](https://asciinema.org/a/UTLhILdA5V3Jhd5oqb4RVgtQt)
+
+### Brain Calc
+
+```sh
+$ brain-calc
+```
+
+[![asciicast](https://asciinema.org/a/YJthUKg71m8M2iHTGMgeNZ8CI.svg)](https://asciinema.org/a/YJthUKg71m8M2iHTGMgeNZ8CI)
+
+[![asciicast](https://asciinema.org/a/B4jaEiB3tqT8fNufpLgpxf5hw.svg)](https://asciinema.org/a/B4jaEiB3tqT8fNufpLgpxf5hw)

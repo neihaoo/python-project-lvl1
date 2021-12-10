@@ -11,6 +11,7 @@
   - [Brain Even](#Brain-Even)
   - [Brain Calc](#Brain-Calc)
   - [Brain GCD](#Brain-GCD)
+  - [Brain Progression](#Brain-Progression)
 
 ## Install Games
 
@@ -51,3 +52,13 @@ $ brain-gcd
 [![asciicast](https://asciinema.org/a/Aya4ijnIIUjrih5HEjAwy0OXA.svg)](https://asciinema.org/a/Aya4ijnIIUjrih5HEjAwy0OXA)
 
 [![asciicast](https://asciinema.org/a/WsnnmlVZ04ZFD5VQ2lMeDJ1GB.svg)](https://asciinema.org/a/WsnnmlVZ04ZFD5VQ2lMeDJ1GB)
+
+### Brain Progression
+
+```sh
+$ brain-progression
+```
+
+[![asciicast](https://asciinema.org/a/ZORvFqyg1GvOE0PHu3h2K5q5t.svg)](https://asciinema.org/a/ZORvFqyg1GvOE0PHu3h2K5q5t)
+
+[![asciicast](https://asciinema.org/a/ud1KqxtlY7nIF6YsOPqrS7ezp.svg)](https://asciinema.org/a/ud1KqxtlY7nIF6YsOPqrS7ezp)

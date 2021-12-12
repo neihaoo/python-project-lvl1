@@ -10,7 +10,7 @@ game_description = 'What is the result of the expression?'
 
 def get_answer(left_operand, right_operand, operator):
     """
-    Make an expression and calculates it.
+    Take two operands and operator, make an expression and calculate it.
 
     Args:
         left_operand: int

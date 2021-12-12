@@ -1,11 +1,22 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.7.0"
-description = ""
+description = "Brain Games (Hexlet Python Project Level 1)"
 authors = ["neihaoo <neihaoo@gmail.com>"]
+repository = "https://github.com/neihaoo/python-project-lvl1"
+classifiers = [
+  "Topic :: Games/Entertainment :: Puzzle Games"
+]
 packages = [
   { include = "brain_games" },
 ]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+prompt = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+wemake-python-styleguide = "^0.15.3"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
@@ -14,13 +25,6 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-prompt = "^0.4.1"
-
-[tool.poetry.dev-dependencies]
-wemake-python-styleguide = "^0.15.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

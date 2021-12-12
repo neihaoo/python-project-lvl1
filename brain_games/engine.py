@@ -1,17 +1,15 @@
-"""Brain Games Main Module."""
+"""Brain Games Engine Module."""
 
 import prompt
 
 
 def run_game(get_game_data, description):
     """
-    Brain Games logic.
+    Take game data and description and run the game.
 
     Args:
         get_game_data: fn
-            Returns a tuple of question and answer.
         description: str
-            Game description.
     """
     print('Welcome to the Brain Games!')
 

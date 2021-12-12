@@ -11,7 +11,7 @@ game_description = (
 
 def is_prime(number):
     """
-    Check is number prime.
+    Check if a number is prime or not.
 
     Args:
         number: int

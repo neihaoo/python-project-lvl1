@@ -1,11 +1,11 @@
 """Brain Games Calc Module."""
 
-from random import choice, randint
+import random
 
 from brain_games.engine import run_game as play
 
-operators = ('+', '-', '*')
-game_description = 'What is the result of the expression?'
+OPERATORS = ('+', '-', '*')
+GAME_DESCRIPTION = 'What is the result of the expression?'
 
 
 def get_answer(left_operand, right_operand, operator):
@@ -37,9 +37,9 @@ def get_game_data():
     Returns:
         tuple
     """
-    left_operand = randint(0, 100)
-    right_operand = randint(0, 100)
-    operator = choice(operators)
+    left_operand = random.randint(0, 100)
+    right_operand = random.randint(0, 100)
+    operator = random.choice(OPERATORS)
 
     question = '{0} {1} {2}'.format(left_operand, operator, right_operand)
     answer = str(get_answer(left_operand, right_operand, operator))
@@ -54,4 +54,4 @@ def start_game():
     Returns:
         fn
     """
-    return play(get_game_data, game_description)
+    return play(get_game_data, GAME_DESCRIPTION)

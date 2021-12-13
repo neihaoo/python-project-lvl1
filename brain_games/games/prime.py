@@ -1,10 +1,10 @@
 """Brain Games Prime Module."""
 
-from random import randint
+import random
 
 from brain_games.engine import run_game as play
 
-game_description = (
+GAME_DESCRIPTION = (
     'Answer "yes" if given number is prime. Otherwise answer "no".'
 )
 
@@ -36,7 +36,7 @@ def get_game_data():
     Returns:
         tuple
     """
-    question = randint(0, 100)
+    question = random.randint(0, 100)
     answer = 'yes' if is_prime(question) else 'no'
 
     return (question, answer)
@@ -49,4 +49,4 @@ def start_game():
     Returns:
         fn
     """
-    return play(get_game_data, game_description)
+    return play(get_game_data, GAME_DESCRIPTION)

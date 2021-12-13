@@ -1,12 +1,12 @@
 """Brain Games Calc Module."""
 
-from random import choice, randint
+import random
 
 from brain_games.engine import run_game as play
 
-PROGRESSION_LENGTH = 10
-
-game_description = 'What number is missing in the progression?'
+MIN_PROGRESSION_LENGTH = 5
+MAX_PROGRESSION_LENGTH = 10
+GAME_DESCRIPTION = 'What number is missing in the progression?'
 
 
 def generate_progression(start, length, step):
@@ -28,6 +28,27 @@ def generate_progression(start, length, step):
         start += step
 
     return progression
+
+
+def get_random_progression():
+    """
+    Generate random progression.
+
+    Returns:
+        turple
+    """
+    start_progression = random.randint(0, 100)
+    step_progression = random.randint(0, 100)
+    progression_length = random.randint(
+        MIN_PROGRESSION_LENGTH,
+        MAX_PROGRESSION_LENGTH,
+    )
+
+    return generate_progression(
+        start_progression,
+        progression_length,
+        step_progression,
+    )
 
 
 def make_question(progression, hidden_number):
@@ -57,16 +78,9 @@ def get_game_data():
     Returns:
         tuple
     """
-    start_progression = randint(0, 100)
-    step_progression = randint(0, 100)
+    progression = get_random_progression()
 
-    progression = generate_progression(
-        start_progression,
-        PROGRESSION_LENGTH,
-        step_progression,
-    )
-
-    answer = choice(progression)
+    answer = random.choice(progression)
     question = make_question(progression, answer)
 
     return (question, str(answer))
@@ -79,4 +93,4 @@ def start_game():
     Returns:
         fn
     """
-    return play(get_game_data, game_description)
+    return play(get_game_data, GAME_DESCRIPTION)

@@ -2,6 +2,9 @@
 
 import prompt
 
+ROUND_COUNT = 3
+GREETING_MESSAGE = 'Welcome to the Brain Games!'
+
 
 def run_game(get_game_data, description):
     """
@@ -11,23 +14,23 @@ def run_game(get_game_data, description):
         get_game_data: fn
         description: str
     """
-    print('Welcome to the Brain Games!')
+    print(GREETING_MESSAGE)
 
     name = prompt.string('May I have your name? ')
 
     print('Hello, {0}!'.format(name))
     print(description)
 
-    round_count = 3
+    correct_answer_count = 0
 
-    while round_count:
+    while correct_answer_count < ROUND_COUNT:
         (question, game_answer) = get_game_data()
 
         print('Question: {0}'.format(question))
 
         player_answer = prompt.string('Your answer: ')
 
-        if player_answer != game_answer:
+        if player_answer.lower() != game_answer:
             print(
                 "'{0}' is wrong answer ;(. Correct answer was '{1}'.".
                 format(player_answer, game_answer),
@@ -38,6 +41,6 @@ def run_game(get_game_data, description):
 
         print('Correct!')
 
-        round_count -= 1
+        correct_answer_count += 1
 
     print('Congratulations, {0}!'.format(name))

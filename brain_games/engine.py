@@ -2,7 +2,7 @@
 
 import prompt
 
-ROUND_COUNT = 3
+ROUNDS_COUNT = 3
 GREETING_MESSAGE = 'Welcome to the Brain Games!'
 
 
@@ -23,7 +23,7 @@ def run_game(get_game_data, description):
 
     correct_answer_count = 0
 
-    while correct_answer_count < ROUND_COUNT:
+    while correct_answer_count < ROUNDS_COUNT:
         (question, game_answer) = get_game_data()
 
         print('Question: {0}'.format(question))
